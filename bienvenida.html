@@ -3,33 +3,71 @@
   <head>
     <meta charset="utf-8" />
     <title>Trivia y aprende</title>
-    <link href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
 
   <body>
-    <section id="bienvenida"></section>
-    <form id="formulario">
-      <label>nombre <input type="text" id="nombre"/></label>
-      <button type="submit">Ok</button>
-    </form>
+    <center>
+      <section id="bienvenida"></section>
+      <form id="formulario">
+        <label>nombre <input type="text" id="nombre"/></label>
+        <button type="submit">Ok</button>
+      </form>
 
-    <section id="hola" class="desaparece">
-      <section id="pregunta-jugar">
-        <p>¿Hoy que vamos a jugar?</p>
-        <button type="submit" id="colores">Colores</button>
-        <button type="submit" id="animales">Animales</button>
+      <section id="hola" class="desaparece">
+        <section id="pregunta-jugar">
+          <p>¿Hoy que vamos a jugar?</p>
+          <button type="submit" id="colores">Colores</button>
+          <button type="submit" id="animales">Animales</button>
+        </section>
       </section>
-    </section>
 
-    <section id="colores" class="preguntas">
-      <section id="preguntaUnoC">
-        <h2>¿De qué color es el cielo?</h2>
-        <button type="submit" value="verde">Verde</button>
-        <button type="submit" value="amarillo">Amarillo</button>
-        <button type="submit" value="azul">Azul</button>
+      <section class="colores">
+        <section id="primera-pregunta-color" class="pregunta-colores">
+          <h2>¿De qué color es el cielo?</h2>
+          <input type="radio" name="radio" value="verde" />Verde<br />
+          <input type="radio" name="radio" value="amarillo" />Amarillo<br />
+          <input type="radio" name="radio" value="azul" />Azul
+        </section>
+        <section id="segunda-pregunta-color" class="pregunta-colores">
+          <h2>¿De qué color son las ranas?</h2>
+          <input type="radio" name="radio" value="rosas" />rosas<br />
+          <input type="radio" name="radio" value="verdes" />verdes<br />
+          <input type="radio" name="radio" value="moradas" />moradas
+        </section>
+        <section id="tercera-pregunta-color" class="pregunta-colores">
+          <h2>¿Cuáles son los colores del arcoíris?</h2>
+          <input type="radio" name="radio" value="corecta" />rojo, naranja,
+          amarillo, verde, cian, azul y violeta<br />
+          <input type="radio" name="radio" value="inc1" />blanco, negro, café,
+          rosa, morado, naranja<br />
+          <input type="radio" name="radio" value="inc2" />rosa, naranja, dorado,
+          verde, azul, y morado
+        </section>
       </section>
-    </section>
 
-    <script src="../js/bienvenida.js"></script>
+      <section class="animales">
+        <section id="primera-pregunta-animales" class="pregunta-animales">
+          <h2>¿Qué animal tiene rayas blancas y negras?</h2>
+          <input type="radio" name="radio" value="tigre" />tigre<br />
+          <input type="radio" name="radio" value="abeja" />abeja<br />
+          <input type="radio" name="radio" value="cebra" />cebra
+        </section>
+        <section id="segunda-pregunta-animales" class="pregunta-animales">
+          <h2>¿Qué animal hace "kikirikí"?</h2>
+          <input type="radio" name="radio" value="gallina" />gallina<br />
+          <input type="radio" name="radio" value="gallo" />gallo<br />
+          <input type="radio" name="radio" value="pato" />pato
+        </section>
+        <section id="tercera-pregunta-animales" class="pregunta-animales">
+          <h2>¿Qué animal duerme boca abajo?</h2>
+          <input type="radio" name="radio" value="murcielago" />murciélago<br />
+          <input type="radio" name="radio" value="koala" />koala<br />
+          <input type="radio" name="radio" value="ardilla" />ardilla
+        </section>
+      </section>
+
+      <script src="../js/bienvenida.js"></script>
+    </center>
   </body>
 </html>

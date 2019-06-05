@@ -13,8 +13,8 @@ miForm.addEventListener("submit", recogeDatos);
 
 function escogeCategoria(evento) {
   evento.preventDefault();
-  var categoriaColores = document.querySelector("#colores");
-  var categoriaAnimales = document.querySelector("#animales");
+  var categoriaColores = document.querySelector(".colores");
+  var categoriaAnimales = document.querySelector(".animales");
 }
 
 var botonColores = document.querySelector("#colores");
