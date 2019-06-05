@@ -1,0 +1,11 @@
+.desaparece {
+  display: none;
+}
+
+#hola {
+  display: block;
+}
+
+#colores {
+  display: block;
+}

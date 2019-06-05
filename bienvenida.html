@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trivia y aprende</title>
+    <link href="../css/estilos.css" />
+  </head>
+
+  <body>
+    <section id="bienvenida"></section>
+    <form id="formulario">
+      <label>nombre <input type="text" id="nombre"/></label>
+      <button type="submit">Ok</button>
+    </form>
+
+    <section id="hola" class="desaparece">
+      <section id="pregunta-jugar">
+        <p>¿Hoy que vamos a jugar?</p>
+        <button type="submit" id="colores">Colores</button>
+        <button type="submit" id="animales">Animales</button>
+      </section>
+    </section>
+
+    <section id="colores" class="preguntas">
+      <section id="preguntaUnoC">
+        <h2>¿De qué color es el cielo?</h2>
+        <button type="submit" value="verde">Verde</button>
+        <button type="submit" value="amarillo">Amarillo</button>
+        <button type="submit" value="azul">Azul</button>
+      </section>
+    </section>
+
+    <script src="../js/bienvenida.js"></script>
+  </body>
+</html>
