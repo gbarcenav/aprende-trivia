@@ -12,10 +12,13 @@
 
   <body>
     <header>
-      <nav><figure><img src="./img/logo_trivia1.png" alt="logo trivia y aprende" class="principal-logo"></figure></nav>
+      <nav><figure class="img-figure"><img src="./img/logo_trivia1.png" alt="logo trivia y aprende" class="principal-logo"></figure>
+        <button class="cont-back"><img src="./img/return-01.png" alt="regresar" class="back"></button>
+          <figure><img src="./img/logo_trivia2.png" alt="logo trivia y aprende" class="logo-second"></figure>
+        </nav>
     </header>
     <main>
-      <section id="welcome">
+      <section class="container-section-welcome" id="welcome">
         <figure class="container-welcome">
           <img
             class="welcome-img"
@@ -28,19 +31,20 @@
             type="text"
             placeholder="&#128512  Escribe tu nombre &#128512"
             class="input-name"
-            id="name"
           />
           <hr class="line-name" />
           <button id="btn-welcome-name" class="btn-circular">OK</button>
         </form>
       </section>
 
-      <section class="home">
-        <nav>
-          <figure><img src="./img/logo_trivia2.png" alt="logo trivia y aprende" class="logo-second"></figure>
-        </nav>
-        
+      <section class="container-section-home" id="home">
+        <div>
+          <h1>¡Hola Gabriela!</h1>
+          <h2>¿Qué vamos a jugar hoy?</h2>
 
+          <button>Colores</button>
+          <button>Animales</button>
+        </div>
       </section>
     </main>
     <footer></footer>
