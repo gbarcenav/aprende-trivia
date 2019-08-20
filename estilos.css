@@ -1,4 +1,132 @@
-.desaparece {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ESTILOS GENERALES */
+body {
+  background: #1ecbe3;
+  font-family: "Nunito", sans-serif;
+}
+
+nav {
+  width: 100vw;
+  height: 20vh;
+}
+
+nav figure {
+  width: 100vw;
+  height: inherit;
+}
+.principal-logo {
+  display: block;
+  height: inherit;
+  padding-top: 2vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo-second {
+  display: block;
+  height: inherit;
+  padding-top: 2vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Estilos BIENVENIDA */
+section .welcome {
+  /* (quitar) */
+  display: block;
+  /* (quitar) */
+}
+.container-welcome img {
+  position: relative;
+  top: 20vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-form {
+  position: relative;
+  top: 28vh;
+}
+
+.input-name {
+  width: 580px;
+  height: 60px;
+  background: transparent;
+  border: transparent;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: ghostwhite;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 0px;
+}
+
+::-webkit-input-placeholder {
+  color: ghostwhite;
+}
+
+:-moz-placeholder {
+  color: ghostwhite;
+}
+
+::-moz-placeholder {
+  color: ghostwhite;
+}
+
+:-ms-input-placeholder {
+  color: ghostwhite;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.line-name {
+  width: 580px;
+  height: 5px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: ghostwhite;
+  border: transparent;
+  margin-bottom: 30px;
+}
+
+.btn-circular {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: ghostwhite;
+  color: #1ecbe3;
+  border: transparent;
+  border-radius: 50%;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 0px;
+}
+
+/* Estilos HOME */
+.home {
+  /* (quitar) */
+  margin-top: 1024px;
+  height: 100vh;
+  display: block;
+  background: #b15498;
+  /* (quitar) */
+}
+
+/* .desaparece {
   display: none;
 }
 
@@ -11,4 +139,4 @@
 }
 body {
   background-color: #1ecbe3;
-}
+} */
