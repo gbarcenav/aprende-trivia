@@ -3,12 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <title>Trivia y aprende</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:300,400,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilos.css" />
   </head>
 
   <body>
-    <center>
-      <section id="bienvenida"></section>
+    <header>
+      <nav><figure><img src="./img/logo_trivia1.png" alt="logo trivia y aprende" class="principal-logo"></figure></nav>
+    </header>
+    <main>
+      <section id="welcome">
+        <figure class="container-welcome">
+          <img
+            class="welcome-img"
+            src="./img/bienvenidos-01.png"
+            alt="bienvenidos"
+          />
+        </figure>
+        <form action="" class="name-form">
+          <input
+            type="text"
+            placeholder="&#128512  Escribe tu nombre &#128512"
+            class="input-name"
+            id="name"
+          />
+          <hr class="line-name" />
+          <button id="btn-welcome-name" class="btn-circular">OK</button>
+        </form>
+      </section>
+
+      <section class="home">
+        <nav>
+          <figure><img src="./img/logo_trivia2.png" alt="logo trivia y aprende" class="logo-second"></figure>
+        </nav>
+        
+
+      </section>
+    </main>
+    <footer></footer>
+    <!-- <section id="bienvenida"></section>
       <form id="formulario">
         <label>nombre <input type="text" id="nombre"/></label>
         <button type="submit">Ok</button>
@@ -17,8 +53,8 @@
       <section id="hola" class="desaparece">
         <section id="pregunta-jugar">
           <p>¿Hoy que vamos a jugar?</p>
-          <button type="submit" id="colores">Colores</button>
-          <button type="submit" id="animales">Animales</button>
+          <button type="button" id="colores">Colores</button>
+          <button type="button" id="animales">Animales</button>
         </section>
       </section>
 
@@ -65,9 +101,8 @@
           <input type="radio" name="radio" value="koala" />koala<br />
           <input type="radio" name="radio" value="ardilla" />ardilla
         </section>
-      </section>
+      </section> -->
 
-      <script src="../js/bienvenida.js"></script>
-    </center>
+    <script src="./bienvenida.js"></script>
   </body>
 </html>
