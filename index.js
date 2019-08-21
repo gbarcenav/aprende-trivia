@@ -16,7 +16,6 @@ const nameSpace = document.getElementById("name-space");
 const btnGetName = document.getElementById("btn-welcome-name");
 
 // Obtener e imprimir el nombre
-
 const getName = () => {
   welcomeSection.classList.add("hidde-section");
   homeSection.classList.remove("hidde-section");
