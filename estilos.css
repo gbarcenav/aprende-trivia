@@ -127,10 +127,10 @@ nav figure {
   cursor: pointer;
 }
 /* Estilos HOME ---------------------------------------*/
-.container-section-home {
+.hidde-section {
   display: none;
 }
-.img-figure {
+.hidde-figure {
   display: none;
 }
 
@@ -150,7 +150,7 @@ nav figure {
   width: 9vw;
 }
 
-.cont-back-home {
+.hidde-btn {
   display: none;
 }
 
