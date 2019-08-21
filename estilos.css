@@ -34,13 +34,22 @@ nav figure {
   margin-left: auto;
 }
 
-/* Estilos BIENVENIDA ---------------------------------------*/
-.container-section-welcome {
-  /* (quitar) */
-  display: none;
-  /* (quitar) */
+.btn-white {
+  width: 250px;
+  height: 60px;
+  background: ghostwhite;
+  border-radius: 30px;
+  border-color: transparent;
+  outline: 0px;
+  color: #1ecbe3;
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin: 2vw;
+  cursor: pointer;
 }
 
+/* Estilos BIENVENIDA ---------------------------------------*/
 .container-welcome img {
   position: relative;
   top: 20vh;
@@ -115,22 +124,54 @@ nav figure {
   margin-left: auto;
   margin-right: auto;
   outline: 0px;
-}
-
-.img-figure {
-  /* quitar */
-  display: none;
-  /* quitar */
+  cursor: pointer;
 }
 /* Estilos HOME ---------------------------------------*/
+.container-section-home {
+  display: none;
+}
+.img-figure {
+  display: none;
+}
+
 .cont-back {
-  width: 75px;
-  height: 66px;
+  width: 9vw;
   float: left;
   position: absolute;
   margin-top: 3vh;
   margin-left: 3vw;
   outline: 0px;
+  background: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+
+.cont-back img {
+  width: 9vw;
+}
+
+.cont-back-home {
+  display: none;
+}
+
+.container-texts-btns-home {
+  width: 80vw;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+}
+
+.container-texts-btns-home h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 8vw;
+}
+
+.container-texts-btns-home h2 {
+  font-size: 4vw;
+  color: ghostwhite;
+  margin-bottom: 20px;
 }
 
 /* .desaparece {
