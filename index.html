@@ -12,11 +12,15 @@
 
   <body>
     <header>
-      <nav><figure id="principal-logo"><img src="./img/logo_trivia1.png" alt="logo trivia y aprende" class="principal-logo"></figure>
-        <button class="cont-back hidde-btn" id="back"><img src="./img/return-01.png" alt="regresar" class="back"></button>
+      <nav>
+          <figure id="principal-logo"><img src="./img/logo_trivia1.png" alt="logo trivia y aprende" class="principal-logo"></figure>
+          <a href="" class="cont-back hidde-btn" id="back"><img src="./img/return-01.png" alt="regresar" class="back"></a>
           <figure class="hidde-figure" id="logo-second"><img src="./img/logo_trivia2.png" alt="logo trivia y aprende" class="logo-second"></figure>
-        </nav>
+          <a href="#home" class="cont-back"><img src="./img/exit-02.png" alt="salir" class="back"></a> 
+          <figure class="type-container"><img src="./img/tipo-05.png" alt="colores" class="type-img"></figure>
+      </nav>
     </header>
+    
     <main>
       <section class="container-section-welcome" id="welcome">
         <figure class="container-welcome">
@@ -44,70 +48,23 @@
           <h1><span style="color:#FFA900">¡</span><span style="color:#EB2016">H</span><span style="color:#B15498">o</span><span style="color:#3C75B5">l</span><span style="color:#438302">a</span> <span  id="name-space" style="color:#F2E300"></span><span style="color:#FF7700">!</span></h1>
           <h2>¿Qué vamos a jugar hoy?</h2>
 
-          <button class="btn-white">Colores 🎨</button>
-          <button class="btn-white">Animales 🐳</button>
+          <button class="btn-white">Colores <img src="./img/tipo-05.png" alt="Colores"></button>
+          <button class="btn-white">Animales <img src="./img/tipo-06.png" alt="Animales"></button>
+        </div>
+      </section>
+
+      <section class="questions" id="q-color-first">
+        <div class="container-question">
+          <h3>¿De qué color es el cielo?</h3>
+          <ul>
+            <li><button type="button" id="red" class="btn-white" style="color: #EB2016">rojo</button></li>
+            <li><button type="button" id="green" class="btn-white" style="color: #438302">verde</button></li>
+            <li><button type="button" id="blue" class="btn-white" style="color: #3C75B5">azul</button></li>
+          </ul>
         </div>
       </section>
     </main>
     <footer></footer>
-    <!-- <section id="bienvenida"></section>
-      <form id="formulario">
-        <label>nombre <input type="text" id="nombre"/></label>
-        <button type="submit">Ok</button>
-      </form>
-
-      <section id="hola" class="desaparece">
-        <section id="pregunta-jugar">
-          <p>¿Hoy que vamos a jugar?</p>
-          <button type="button" id="colores">Colores</button>
-          <button type="button" id="animales">Animales</button>
-        </section>
-      </section>
-
-      <section class="colores">
-        <section id="primera-pregunta-color" class="pregunta-colores">
-          <h2>¿De qué color es el cielo?</h2>
-          <input type="radio" name="radio" value="verde" />Verde<br />
-          <input type="radio" name="radio" value="amarillo" />Amarillo<br />
-          <input type="radio" name="radio" value="azul" />Azul
-        </section>
-        <section id="segunda-pregunta-color" class="pregunta-colores">
-          <h2>¿De qué color son las ranas?</h2>
-          <input type="radio" name="radio" value="rosas" />rosas<br />
-          <input type="radio" name="radio" value="verdes" />verdes<br />
-          <input type="radio" name="radio" value="moradas" />moradas
-        </section>
-        <section id="tercera-pregunta-color" class="pregunta-colores">
-          <h2>¿Cuáles son los colores del arcoíris?</h2>
-          <input type="radio" name="radio" value="corecta" />rojo, naranja,
-          amarillo, verde, cian, azul y violeta<br />
-          <input type="radio" name="radio" value="inc1" />blanco, negro, café,
-          rosa, morado, naranja<br />
-          <input type="radio" name="radio" value="inc2" />rosa, naranja, dorado,
-          verde, azul, y morado
-        </section>
-      </section>
-
-      <section class="animales">
-        <section id="primera-pregunta-animales" class="pregunta-animales">
-          <h2>¿Qué animal tiene rayas blancas y negras?</h2>
-          <input type="radio" name="radio" value="tigre" />tigre<br />
-          <input type="radio" name="radio" value="abeja" />abeja<br />
-          <input type="radio" name="radio" value="cebra" />cebra
-        </section>
-        <section id="segunda-pregunta-animales" class="pregunta-animales">
-          <h2>¿Qué animal hace "kikirikí"?</h2>
-          <input type="radio" name="radio" value="gallina" />gallina<br />
-          <input type="radio" name="radio" value="gallo" />gallo<br />
-          <input type="radio" name="radio" value="pato" />pato
-        </section>
-        <section id="tercera-pregunta-animales" class="pregunta-animales">
-          <h2>¿Qué animal duerme boca abajo?</h2>
-          <input type="radio" name="radio" value="murcielago" />murciélago<br />
-          <input type="radio" name="radio" value="koala" />koala<br />
-          <input type="radio" name="radio" value="ardilla" />ardilla
-        </section>
-      </section> -->
 
     <script src="./trivia.js"></script>
     <script src="./index.js"></script>
