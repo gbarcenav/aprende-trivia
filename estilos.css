@@ -181,13 +181,6 @@ h3 {
 }
 
 /* SECCIÓN PRIMERA PREGUNTA */
-
-/* quitar */
-#home,
-#welcome {
-  display: none;
-}
-/* quitar */
 .type-container {
   width: 12vw;
   position: absolute;

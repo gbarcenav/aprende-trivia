@@ -16,8 +16,9 @@
           <figure id="principal-logo"><img src="./img/logo_trivia1.png" alt="logo trivia y aprende" class="principal-logo"></figure>
           <a href="" class="cont-back hidde-btn" id="back"><img src="./img/return-01.png" alt="regresar" class="back"></a>
           <figure class="hidde-figure" id="logo-second"><img src="./img/logo_trivia2.png" alt="logo trivia y aprende" class="logo-second"></figure>
-          <a href="#home" class="cont-back"><img src="./img/exit-02.png" alt="salir" class="back"></a> 
-          <figure class="type-container"><img src="./img/tipo-05.png" alt="colores" class="type-img"></figure>
+          <a href="#home" class="cont-back hidde-btn" id="exit"><img src="./img/exit-02.png" alt="salir" class="back"></a> 
+          <figure class="type-container hidde-figure" id="colors-img"><img src="./img/tipo-05.png" alt="colores" class="type-img"></figure>
+          <figure class="type-container hidde-figure" id="animals-img"><img src="./img/tipo-06.png" alt="animales" class="type-img"></figure>
       </nav>
     </header>
     
@@ -48,18 +49,19 @@
           <h1><span style="color:#FFA900">¡</span><span style="color:#EB2016">H</span><span style="color:#B15498">o</span><span style="color:#3C75B5">l</span><span style="color:#438302">a</span> <span  id="name-space" style="color:#F2E300"></span><span style="color:#FF7700">!</span></h1>
           <h2>¿Qué vamos a jugar hoy?</h2>
 
-          <button class="btn-white">Colores <img src="./img/tipo-05.png" alt="Colores"></button>
-          <button class="btn-white">Animales <img src="./img/tipo-06.png" alt="Animales"></button>
+          <button type="button" class="btn-white" id="btn-colors">Colores <img src="./img/tipo-05.png" alt="Colores"></button>
+          <button  type="button" class="btn-white" id="btn-animals">Animales <img src="./img/tipo-06.png" alt="Animales"></button>
         </div>
       </section>
 
-      <section class="questions" id="q-color-first">
+      <section class="questions hidde-section" id="q-color">
+        <div id="countdown" class="countdown"></div>
         <div class="container-question">
           <h3>¿De qué color es el cielo?</h3>
           <ul>
             <li><button type="button" id="red" class="btn-white" style="color: #EB2016">rojo</button></li>
-            <li><button type="button" id="green" class="btn-white" style="color: #438302">verde</button></li>
-            <li><button type="button" id="blue" class="btn-white" style="color: #3C75B5">azul</button></li>
+            <li><button type="button" id="green" class="btn-white" style="color: #66AE1D">verde</button></li>
+            <li><button type="button" id="blue" class="btn-white" style="color: #1ECBE3">azul</button></li>
           </ul>
         </div>
       </section>
