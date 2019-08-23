@@ -25,7 +25,7 @@ let countdown = seconds => {
   let updatedTime = time;
   let s = 0;
   // setInterval ejecuta la función cada tintervalo de tiempo en milisegundos (1000)
-  let chronometer = setInterval(() => {
+  chronometer = setInterval(() => {
     updatedTime -= 1000;
     s = Math.trunc(updatedTime / 1000);
     element.textContent = `${s}`;
@@ -39,6 +39,17 @@ let countdown = seconds => {
     }
   }, 1000);
 };
+
+// Parar cuenta regresiva al elegir una opción
+// const stopCountdown = () => {
+//   clearTimeOut(countdown);
+// };
+// const btnRed = document.getElementById("red");
+// const btnGreen = document.getElementById("green");
+// const btnBlue = document.getElementById("blue");
+// stopCountdown.addEventListener("click", e => {
+//   if (e.target === btnRed || e.target === btnGreen || btnBlue) modalContainer();
+// });
 
 // MODAL
 // Añadir un objeto de atributos a un elemento
@@ -95,6 +106,10 @@ const printModal = content => {
   });
 };
 
+const btnRed = document.getElementById("red");
+const btnGreen = document.getElementById("green");
+const btnBlue = document.getElementById("blue");
+
 const modalTextBtns = ` <article class="modalTextBtns" id="modalTextTime">
 <h3>Se acabo el tiempo</h3>
 <figure>
@@ -103,8 +118,53 @@ const modalTextBtns = ` <article class="modalTextBtns" id="modalTextTime">
 <button type="button" class="btn-white" >
   <img src="./img/again-10.png" alt="otra vez" id="try-again"/>
 </button>
-<button type="button" class="btn-white"><img src="./img/exit-02.png" id="btn-exit"/></button>
+<button type="button" class="btn-white"><img src="./img/exit-02.png"/></button>
 </article>`;
-// document.getElementById("").addEventListener("click", () => {
-//   printModal(modalTextBtns);
-// });
+
+const modalTextYes = ` <article class="modalTextBtns" id="modalTextYes">
+<h3>¡SÍ!</h3>
+<figure style="
+margin-bottom: 65px;">
+  <img src="./img/co-inc-07.png" alt="feliz" class="img-feel" />
+</figure>
+<button type="button" class="btn-white">
+  <img src="./img/next-11.png" alt="siguiente" />
+</button>
+</article>`;
+
+const modalTextNo = `<article class="modalTextBtns" id="modalTextNo">
+<h3>NO</h3>
+<figure>
+  <img src="./img/co-inc-08.png" alt="triste" class="img-feel" />
+</figure>
+<button type="button" class="btn-white">
+  <img src="./img/again-10.png" alt="otra vez" />
+</button>
+<button type="button" class="btn-white">
+<img src="./img/exit-02.png"/>
+</button>
+</article>`;
+
+// if (
+//   document
+//     .getElementById("blue")
+//     .addEventListener("click", printModal(modalTextYes))
+// ) {
+//   clearInterval(chronometer);
+// } else {
+//   document.addEventListener("click", e => {
+//     if (e.target === btnRed || e.target === btnGreen) printModal(modalTextNo);
+//     clearInterval(chronometer);
+//   });
+// }
+
+const goHomeSection = () => {
+  questionColor.classList.add("hidde-section");
+  homeSection.classList.remove("hidde-section");
+  // principalLogo.classList.add("hidde-figure");
+  // logoSecond.classList.remove("hidde-figure");
+  btnBack.classList.remove("hidde-btn");
+  nameSpace.innerHTML = inputName.value;
+  exitBtn.classList.add("hidde-btn");
+  imgColors.classList.add("hidde-figure");
+};
