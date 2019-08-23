@@ -20,6 +20,8 @@ let time = 1000;
 // SECCIÓN BIENVENIDA
 const btnGetName = document.getElementById("btn-welcome-name");
 
+let chronometer;
+
 // Pasar a sección HOME
 btnGetName.addEventListener("click", getName);
 
@@ -51,4 +53,12 @@ btnColors.addEventListener("click", goColorsSection);
 btnColors.addEventListener("click", e => {
   goColorsSection;
   if (e) countdown(10);
+});
+
+// Ir a HOME con salir (x)
+exitBtn.addEventListener("click", e => {
+  if (e) {
+    clearInterval(chronometer);
+    goHomeSection;
+  }
 });
