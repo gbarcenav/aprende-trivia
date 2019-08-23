@@ -1,46 +1,41 @@
-// function recogeDatos(evento) {
-//   evento.preventDefault();
-//   var nombre = document.querySelector("#nombre").value;
-//   var hola = document.querySelector("#hola");
-//   var mensaje = "<p>¡Hola, " + nombre + "!</p>";
+// Obtener e imprimir el nombre
+const getName = () => {
+  welcomeSection.classList.add("hidde-section");
+  homeSection.classList.remove("hidde-section");
+  principalLogo.classList.add("hidde-figure");
+  logoSecond.classList.remove("hidde-figure");
+  btnBack.classList.remove("hidde-btn");
+  nameSpace.innerHTML = inputName.value;
+};
 
-//   hola.innerHTML = mensaje;
-// }
+// Ir a sección de preguntas sobre colores
+const goColorsSection = () => {
+  homeSection.classList.add("hidde-section");
+  questionColor.classList.remove("hidde-section");
+  btnBack.classList.add("hidde-btn");
+  exitBtn.classList.remove("hidde-btn");
+  imgColors.classList.remove("hidde-figure");
+};
 
-// var miForm = document.querySelector("#formulario");
-
-// miForm.addEventListener("submit", recogeDatos);
-
-// function escogeCategoria(evento) {
-//   evento.preventDefault();
-//   var categoriaColores = document.querySelector(".colores");
-//   var categoriaAnimales = document.querySelector(".animales");
-// }
-
-// var botonColores = document.querySelector("#colores");
-// var botonAnimales = document.querySelector("#animales");
-
-// botonColores.addEventListener("submit", escogeCategoria);
-
-// preguntaUnoC.addEventListener("submit", () => {
-//   var respuesta = preguntaUnoC.value;
-//   if (respuesta === "azul") {
-//     count++;
-//   }
-//   console.log(count);
-// });
-
-// var colores = false;
-// var animales = true;
-
-// function iniciaColores() {
-//   animales = true;
-//   document.querySelector("#hola").classList.remove(visible);
-//   iniciar();
-// }
-
-// function iniciaAnimales() {
-//   animales = true;
-//   document.querySelector("#hola").classList.remove(visible);
-//   iniciar();
-// }
+// countdown es la cuenta regresiva en segundos
+let countdown = seconds => {
+  // time es igual a los segundos
+  time *= seconds;
+  // updatedTime es el tiempo actualizado
+  let updatedTime = time;
+  let s = 0;
+  // setInterval ejecuta la función cada tintervalo de tiempo en milisegundos (1000)
+  let chronometer = setInterval(() => {
+    updatedTime -= 1000;
+    s = Math.trunc(updatedTime / 1000);
+    element.textContent = `${s}`;
+    // condicional para determinar que cuando el cronometro este en 0 va a parar y va a realizar una acción
+    if (updatedTime === 0) {
+      clearInterval(chronometer);
+      alert("¡Su tiempo ha terminado!");
+      document.getElementById("countdown").innerHTML = "0";
+    } else {
+      s--;
+    }
+  }, 1000);
+};
